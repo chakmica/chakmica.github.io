@@ -1,0 +1,231 @@
+.site-blur {
+    filter: blur(5px);
+}
+
+.home{
+    position: relative;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: linear-gradient(#191825, #461e52 70%, #191825);
+    margin-bottom: 10%;
+}
+.header {
+    background-color:rgb(134, 93, 255);
+    height: 63vh;
+    width: 100%;
+}
+
+.section-header {
+    color: rgb(230, 236, 244);
+}
+
+.name{
+    position: relative;
+    top: 75%;
+    left: 5%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.name1 {
+    display: inline-block;
+    color: rgb(255, 163, 253);
+}
+
+.name2 {
+    display: inline-block;
+    color: rgb(227, 132, 255);
+}
+
+.logo {
+    width: 20%;
+    position: absolute;
+    left: 41%;
+    bottom: 20%;
+}
+
+.name1:hover, .name2:hover{
+    cursor: default;
+    color: rgb(230, 236, 244);
+}
+
+.text {
+    font-family:monospace;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+.highlight {
+    color:rgb(134, 93, 255);
+}
+
+.profpic {
+    margin-left: 40%;
+    margin-top: 2%;
+    display: block;
+    width: 20%;
+    left: 50%;
+    border-radius: 50%;
+    border: solid 5px rgb(134, 93, 255);
+}
+
+.relevant-courses {
+    display: block;
+    text-align: center;
+    content: "";
+    margin-top:0;
+}
+
+.relevant-courses-header{
+    color: rgb(134, 93, 255);
+    font-weight:bold;
+    font-size:large;
+}
+
+.projects{
+    display: block;
+    text-align: center;
+}
+
+@media screen and (min-width:1023px){
+    .projects{
+        display: flex;
+    }
+}
+
+.popup-visible {
+    visibility: visible;
+    position: fixed;
+    z-index: 1000;
+    width: 55%;
+    left: 20%;
+    top: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background:rgb(134, 93, 255);
+    border-radius: 5px;
+    border: solid 5px rgb(255, 163, 253);
+}
+
+.popup-invisible {
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 55%;
+    left: 20%;
+    top: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background:rgb(134, 93, 255);
+    border-radius: 5px;
+    border: solid 5px rgb(230, 236, 244);
+}
+
+.contact {
+    display: flex;
+}
+
+.contact-pic{
+    flex: 1;
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+    border-radius: 5px;
+    border: solid 5px rgb(134, 93, 255);
+}
+
+.contact-info{
+    flex: 2;
+    margin-left: 10%;
+    margin-top: 7.5%;
+    display: inline-block;
+}
+
+.contact-email{
+    display: flex;
+}
+
+.contact-email-icon{
+    display: inline-block;
+    margin-right: 2%;
+    padding-top: 2%;
+    width: 10%;
+    height: 10%;
+}
+
+.contact-email-info{
+    color: rgb(230, 236, 244);
+    font-size: larger;
+    font-weight: bold;
+    font-family: monospace;
+    display: inline-block;
+}
+
+.contact-email-icon:hover, .contact-email-info:hover {
+    cursor: pointer;
+}
+
+.contact-phone {
+    display: flex;
+}
+
+.contact-phone-icon {
+    display: inline-block;
+    margin-right: 2%;
+    padding-top: 3%;
+    width: 10%;
+    height: 10%;
+}
+
+.contact-phone-info {
+    color: rgb(230, 236, 244);
+    font-size: larger;
+    font-weight: bold;
+    font-family: monospace;
+    display: inline-block;
+}
+
+.contact-phone-icon:hover, .contact-phone-info:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .contact {
+        display: block;
+    }
+    
+    .contact-pic{
+        margin-left: 30%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: block;
+        width: 40%;
+        height: 40%;
+    }
+    
+    .contact-info{
+        margin-top: 7.5%;
+        margin-left: 20%;
+        display: block;
+    }
+
+    .contact-email-icon {
+        padding-top: 3%;
+    }
+    
+    .contact-phone-icon {
+        padding-top: 4%;
+    }
+}
+
+.bottom-filler {
+    margin-bottom: 16%;
+}
+
+.footer {
+    background-color:rgb(134, 93, 255);
+    font-family: monospace;
+    color:rgb(230, 236, 244);
+    padding-left: 5%;
+}

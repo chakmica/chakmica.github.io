@@ -1,0 +1,49 @@
+.NavButton {
+  background-color: rgb(25, 24, 37);
+  /* background-color: rgb(134, 93, 255); */
+  color: rgb(134, 93, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+  height: auto;
+  padding-top: 1.25%;
+  padding-bottom: 1.25%;
+  padding-left: 1.25%;
+  padding-right: 1.25%;
+}
+
+.NavButton:hover{
+  border-color: rgb(227, 132, 255);
+  color: rgb(230, 236, 244);
+  cursor:pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .NavButton {
+    position: relative;
+    width: 50%;
+    display: block;
+    margin-top: 5%;
+    border: 5px solid rgb(134, 93, 255);
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .NavButton {
+    width: 25%;
+    margin-left: 5%;
+    border: 10px solid rgb(134, 93, 255);
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .NavButton {
+    width: 25%;
+    margin-right: 5%;
+    margin-right: 5%;
+    border: 10px solid rgb(134, 93, 255);
+    font-size: 50px;
+  }
+}

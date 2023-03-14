@@ -1,0 +1,36 @@
+.project {
+  position: relative;
+  width: 100%;
+}
+.project img {
+    position: relative;
+    margin-top: 2%;
+    border-radius: 5px;
+    border: .5rem solid rgb(134, 93, 255);
+}
+
+.project img:hover {
+    cursor: pointer;
+    border: .5rem solid rgb(227, 132, 255);
+}
+
+@media screen and (max-width: 600px) {
+    .project img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+@media screen and (min-width: 600px) {
+  .project img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.project-header {
+  position: absolute;
+  z-index: 1;
+  bottom: 12rem;
+  left: 30rem;
+}
