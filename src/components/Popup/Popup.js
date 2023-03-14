@@ -93,7 +93,7 @@ const Popup = (props) => {
               </li>
             </ul>
             <div className="popup-links">
-              <a href="https://github.com/chakmica">
+              <a href="https://github.com/chakmica/chakmica.github.io/tree/master">
                 <img src={github} alt="Github" />
               </a>
             </div>
