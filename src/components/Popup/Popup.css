@@ -26,7 +26,6 @@
 
 .popup-text {
   display: inline-block;
-  margin-left: 5%;
 }
 
 .popup-summary {
@@ -60,16 +59,21 @@
   }
 
   .popup-image {
+    width: 80%;
+    height: 80%;
     display: block;
-    margin-left: 25%;
+    margin-left: 7%;
+    margin-right: 10%;
   }
 
   .popup-text {
     display: block;
+    margin-left: 0;
   }
 
   .popup-summary {
     font-size: large;
+    margin-left: 15%;
   }
 
   .popup-features {

@@ -43,6 +43,7 @@ function App() {
 
   const emailClickHandler = () => {
     navigator.clipboard.writeText("chakmica@gmail.com");
+    window.open('mailto:chakmica@gmail.com?');
   };
 
   const phoneClickHandler = () => {
