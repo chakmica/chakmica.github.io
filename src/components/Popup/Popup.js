@@ -1,3 +1,4 @@
+import genre_banner from "../../project_images/genre_banner.jpg";
 import website_banner from "../../project_images/website_banner.jpg";
 import milk_banner from "../../project_images/milk_banner.png";
 import digit_banner from "../../project_images/digit_banner.jpg";
@@ -5,7 +6,40 @@ import github from "../../github-mark.svg";
 import "./Popup.css";
 
 const Popup = (props) => {
-  if (props.selected === 0) {
+
+  if (props.selected === 3) {
+    return (
+      <div className="popup">
+        <h1 className="popup-header">Genre Matcher</h1>
+        <div className="popup-content">
+          <img className="popup-image" src={genre_banner} alt=""></img>
+          <div className="popup-text">
+            <p className="popup-summary">
+              Coded a web app to match a searched artist to their genre using Flask.
+            </p>
+            <ul className="popup-features">
+              <li className="popup-feature">
+                Wrote a Selenium automation script to retrieve genre and image info from wikipedia.
+              </li>
+              <li className="popup-feature">
+                Passed data between files using session variables and JSON objects.
+              </li>
+              <li className="popup-feature">
+                Dynamically updated and displayed searched artist info with javascript.
+              </li>
+            </ul>
+            <div className="popup-links">
+              <a href="https://github.com/chakmica/genre_match">
+                <img src={github} alt="Github" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (props.selected === 2) {
     return (
       <div className="popup">
         <h1 className="popup-header">Personal Website</h1>
@@ -40,38 +74,6 @@ const Popup = (props) => {
   if (props.selected === 1) {
     return (
       <div className="popup">
-        <h1 className="popup-header">Milk Manager</h1>
-        <div className="popup-content">
-          <img className="popup-image" src={milk_banner} alt=""></img>
-          <div className="popup-text">
-            <p className="popup-summary">
-              Coded a desktop UI to manage cow farms using JavaFX.
-            </p>
-            <ul className="popup-features">
-              <li className="popup-feature">
-                Loaded and output farm report text files.
-              </li>
-              <li className="popup-feature">
-                Implemented ability to view, edit, and delete existing reports.
-              </li>
-              <li className="popup-feature">
-                Displayed graph of annual milk contribution of a specified farm.
-              </li>
-            </ul>
-            <div className="popup-links">
-              <a href="https://github.com/chakmica">
-                <img src={github} alt="Github" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (props.selected === 2) {
-    return (
-      <div className="popup">
         <h1 className="popup-header">Digit Classifier</h1>
         <div className="popup-content">
           <img className="popup-image" src={digit_banner} alt=""></img>
@@ -90,6 +92,38 @@ const Popup = (props) => {
               </li>
               <li className="popup-feature">
                 Model had &gt;90% accuracy on training set.
+              </li>
+            </ul>
+            <div className="popup-links">
+              <a href="https://github.com/chakmica">
+                <img src={github} alt="Github" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (props.selected === 0) {
+    return (
+      <div className="popup">
+        <h1 className="popup-header">Milk Manager</h1>
+        <div className="popup-content">
+          <img className="popup-image" src={milk_banner} alt=""></img>
+          <div className="popup-text">
+            <p className="popup-summary">
+              Coded a desktop UI to manage cow farms using JavaFX.
+            </p>
+            <ul className="popup-features">
+              <li className="popup-feature">
+                Loaded and output farm report text files.
+              </li>
+              <li className="popup-feature">
+                Implemented ability to view, edit, and delete existing reports.
+              </li>
+              <li className="popup-feature">
+                Displayed graph of annual milk contribution of a specified farm.
               </li>
             </ul>
             <div className="popup-links">

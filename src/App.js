@@ -7,6 +7,7 @@ import Project from "./components/Project/Project";
 import Popup from "./components/Popup/Popup";
 import { ReactComponent as Moon } from "./moon.svg";
 import profpic from "./web_prof_pic_small.jpg";
+import genre_logo from "./project_images/genre_logo.svg";
 import website_logo from "./website_logo.svg";
 import milk_logo from "./project_images/cow.jpg";
 import digit_logo from "./project_images/digit_logo.jpg";
@@ -43,7 +44,7 @@ function App() {
 
   const emailClickHandler = () => {
     navigator.clipboard.writeText("chakmica@gmail.com");
-    window.open('mailto:chakmica@gmail.com?');
+    window.open("mailto:chakmica@gmail.com?");
   };
 
   const phoneClickHandler = () => {
@@ -124,20 +125,25 @@ function App() {
           </Page>
           <Page section={projects} title="PROJECTS">
             <div className="projects">
-              <Project
+            <Project
                 onClick={projectClickHandler}
-                banner={website_logo}
-                projectNumber={0}
+                banner={genre_logo}
+                projectNumber={3}
               />
               <Project
                 onClick={projectClickHandler}
-                banner={milk_logo}
-                projectNumber={1}
+                banner={website_logo}
+                projectNumber={2}
               />
               <Project
                 onClick={projectClickHandler}
                 banner={digit_logo}
-                projectNumber={2}
+                projectNumber={1}
+              />
+              <Project
+                onClick={projectClickHandler}
+                banner={milk_logo}
+                projectNumber={0}
               />
             </div>
           </Page>
