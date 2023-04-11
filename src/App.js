@@ -7,12 +7,13 @@ import Project from "./components/Project/Project";
 import Popup from "./components/Popup/Popup";
 import { ReactComponent as Moon } from "./moon.svg";
 import profpic from "./web_prof_pic_small.jpg";
+import noise_logo from "./project_images/noise_logo.svg";
 import genre_logo from "./project_images/genre_logo.svg";
-import website_logo from "./website_logo.svg";
+import website_logo from "./project_images/website_logo.svg";
 import milk_logo from "./project_images/cow.jpg";
 import digit_logo from "./project_images/digit_logo.jpg";
 import contactpic from "./contact_photo.jpg";
-import phone from "./phone_icon.svg";
+import github from "./github-mark.svg";
 import email from "./email_icon.svg";
 
 function App() {
@@ -47,8 +48,8 @@ function App() {
     window.open("mailto:chakmica@gmail.com?");
   };
 
-  const phoneClickHandler = () => {
-    navigator.clipboard.writeText("6087192325");
+  const githubClickHandler = () => {
+    window.open("https://github.com/chakmica");
   };
 
   const siteClickHandler = () => {
@@ -125,22 +126,32 @@ function App() {
           </Page>
           <Page section={projects} title="PROJECTS">
             <div className="projects">
-            <Project
+              <Project
+                className="project"
+                onClick={projectClickHandler}
+                banner={noise_logo}
+                projectNumber={4}
+              />
+              <Project
+                className="project"
                 onClick={projectClickHandler}
                 banner={genre_logo}
                 projectNumber={3}
               />
               <Project
+                className="project"
                 onClick={projectClickHandler}
                 banner={website_logo}
                 projectNumber={2}
               />
               <Project
+                className="project"
                 onClick={projectClickHandler}
                 banner={digit_logo}
                 projectNumber={1}
               />
               <Project
+                className="project"
                 onClick={projectClickHandler}
                 banner={milk_logo}
                 projectNumber={0}
@@ -162,18 +173,18 @@ function App() {
                     chakmica@gmail.com
                   </p>
                 </div>
-                <div className="contact-phone">
+                <div className="contact-github">
                   <img
-                    className="contact-phone-icon"
-                    src={phone}
-                    alt="phone: "
-                    onClick={phoneClickHandler}
+                    className="contact-github-icon"
+                    src={github}
+                    alt="github: "
+                    onClick={githubClickHandler}
                   ></img>
                   <h4
-                    className="contact-phone-info"
-                    onClick={phoneClickHandler}
+                    className="contact-github-info"
+                    onClick={githubClickHandler}
                   >
-                    (608) 719-2325
+                    github.com/chakmica
                   </h4>
                 </div>
               </div>

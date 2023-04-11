@@ -1,3 +1,4 @@
+import noise_banner from "../../project_images/noise_banner.jpg";
 import genre_banner from "../../project_images/genre_banner.jpg";
 import website_banner from "../../project_images/website_banner.jpg";
 import milk_banner from "../../project_images/milk_banner.png";
@@ -6,6 +7,39 @@ import github from "../../github-mark.svg";
 import "./Popup.css";
 
 const Popup = (props) => {
+  if (props.selected === 4) {
+    return (
+      <div className="popup">
+        <h1 className="popup-header">Noise Tree</h1>
+        <div className="popup-content">
+          <img className="popup-image" src={noise_banner} alt=""></img>
+          <div className="popup-text">
+            <p className="popup-summary">
+              Coded a web app to discover related artists using the Spotify API.
+            </p>
+            <ul className="popup-features">
+              <li className="popup-feature">
+                <a className="project-url" href="https://noise-tree-2d1b0.web.app/">Project Link</a>
+              </li>
+              <li className="popup-feature">
+                Added ability to grow and refresh tree nodes to discover new
+                artists with a dynamic UI.
+              </li>
+              <li className="popup-feature">
+                Used Firebase cloud functions to securely call Spotify API from
+                app.
+              </li>
+            </ul>
+            <div className="popup-links">
+              <a href="https://github.com/chakmica">
+                <img src={github} alt="Github" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (props.selected === 3) {
     return (
@@ -15,17 +49,21 @@ const Popup = (props) => {
           <img className="popup-image" src={genre_banner} alt=""></img>
           <div className="popup-text">
             <p className="popup-summary">
-              Coded a web app to match a searched artist to their genre using Flask.
+              Coded a web app to match a searched artist to their genre using
+              Flask.
             </p>
             <ul className="popup-features">
               <li className="popup-feature">
-                Wrote a Selenium automation script to retrieve genre and image info from wikipedia.
+                Wrote a Selenium automation script to retrieve genre and image
+                info from wikipedia.
               </li>
               <li className="popup-feature">
-                Passed data between files using session variables and JSON objects.
+                Passed data between files using session variables and JSON
+                objects.
               </li>
               <li className="popup-feature">
-                Dynamically updated and displayed searched artist info with javascript.
+                Dynamically updated and displayed searched artist info with
+                javascript.
               </li>
             </ul>
             <div className="popup-links">

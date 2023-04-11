@@ -96,9 +96,59 @@
   text-align: center;
 }
 
-@media screen and (min-width: 1023px) {
+.project {
+  width: 100%;
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px){
   .projects {
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .project{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .project{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .project {
+    width: calc(100%/3);
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .project{
+    width: 25%;
+    margin-bottom: 20px;
   }
 }
 
@@ -178,11 +228,11 @@
   cursor: pointer;
 }
 
-.contact-phone {
+.contact-github {
   display: flex;
 }
 
-.contact-phone-icon {
+.contact-github-icon {
   display: inline-block;
   margin-right: 2%;
   padding-top: 3%;
@@ -190,7 +240,7 @@
   height: 10%;
 }
 
-.contact-phone-info {
+.contact-github-info {
   color: rgb(230, 236, 244);
   font-size: larger;
   font-weight: bold;
@@ -198,8 +248,8 @@
   display: inline-block;
 }
 
-.contact-phone-icon:hover,
-.contact-phone-info:hover {
+.contact-github-icon:hover,
+.contact-github-info:hover {
   cursor: pointer;
 }
 
@@ -227,7 +277,7 @@
     padding-top: 3%;
   }
 
-  .contact-phone-icon {
+  .contact-github-icon {
     padding-top: 4%;
   }
 }

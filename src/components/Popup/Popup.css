@@ -15,6 +15,10 @@
   display: flex;
 }
 
+.project-url {
+  color: rgb(230, 236, 244);
+}
+
 .popup-image {
   display: inline-block;
   margin-top: 2%;
