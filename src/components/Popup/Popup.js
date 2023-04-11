@@ -15,15 +15,22 @@ const Popup = (props) => {
           <img className="popup-image" src={noise_banner} alt=""></img>
           <div className="popup-text">
             <p className="popup-summary">
-              Coded a web app to discover related artists using the Spotify API.
+              Coded a{" "}
+              <a
+                className="project-url"
+                href="https://noise-tree-2d1b0.web.app/"
+              >
+                web app
+              </a>{" "}
+              to discover related artists using the Spotify API.
             </p>
             <ul className="popup-features">
               <li className="popup-feature">
-                <a className="project-url" href="https://noise-tree-2d1b0.web.app/">Project Link</a>
+                Developed front-end using React and Bootstrap, allowing the user
+                to grow and refresh graph nodes to discover new music artists.
               </li>
               <li className="popup-feature">
-                Added ability to grow and refresh tree nodes to discover new
-                artists with a dynamic UI.
+                Integrated the Spotify API to fetch and display artist data
               </li>
               <li className="popup-feature">
                 Used Firebase cloud functions to securely call Spotify API from
